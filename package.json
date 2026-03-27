@@ -1,7 +1,7 @@
 {
-  "name": "spacecat",
-  "displayName": "Space Cat Themes",
-  "version": "0.0.95",
+  "name": "spacekitten",
+  "displayName": "Space Kitten Themes",
+  "version": "0.1.00",
   "description": "Themes from outer space",
   "categories": [
     "Themes"
@@ -10,27 +10,24 @@
     "Theme",
     "Dark",
     "Spacecat",
+    "Spacekitten",
     "Modern",
-    "vivid",
     "Node.js",
     "cat",
     "space",
     "spacecat",
-    "gruvbox",
-    "gruvcat",
-    "tokyocat",
-    "tokyonight",
+    "spacekitten",
     "solarized"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/franzgollhammer/spacecat"
+    "url": "https://github.com/m4tt1mus/spacecat-vscode-theme"
   },
   "license": "MIT",
   "author": {
-    "name": "Franz Gollhammer"
+    "name": "Matt S"
   },
-  "publisher": "franzgollhammer",
+  "publisher": "m4tt1mus",
   "scripts": {
     "package": "npx @vscode/vsce package",
     "publish": "npx @vscode/vsce publish",

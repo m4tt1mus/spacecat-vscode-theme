@@ -18,13 +18,15 @@ jobs:
 
       - run: npm ci
 
-      - run: npm run package
-
-      - name: Get version
-        id: version
-        run: echo "version=$(node -p "require('./package.json').version")" >> $GITHUB_OUTPUT
+      - run: npx @vscode/vsce package --out spacekitten.vsix
 
       - uses: actions/upload-artifact@v7
         with:
-          name: spacekitten-${{ steps.version.outputs.version }}
-          path: "*.vsix"
+          name: spacekitten
+          path: spacekitten.vsix
+
+      - name: Upload vsix to release
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: spacekitten.vsix

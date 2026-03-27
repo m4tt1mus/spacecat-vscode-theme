@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Space Kitten Dark — Color Reference</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #1f1f1f;
+      color: #cccccc;
+      font-family: 'Menlo', 'Consolas', monospace;
+      font-size: 13px;
+      padding: 32px;
+    }
+    h1 { color: #ca9ee6; font-size: 20px; margin-bottom: 8px; }
+    .subtitle { color: #6e7681; margin-bottom: 32px; font-size: 12px; }
+    h2 { color: #E5C07B; font-size: 13px; text-transform: uppercase; letter-spacing: 0.1em; margin: 28px 0 12px; }
+    .grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .swatch {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100px;
+    }
+    .color-block {
+      width: 100px;
+      height: 56px;
+      border-radius: 6px;
+      border: 1px solid #2b2b2b;
+      cursor: pointer;
+      position: relative;
+    }
+    .color-block:hover::after {
+      content: 'copied!';
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0,0,0,0.6);
+      border-radius: 5px;
+      color: #fff;
+      font-size: 11px;
+    }
+    .hex {
+      margin-top: 5px;
+      font-size: 11px;
+      color: #9d9d9d;
+    }
+    .label {
+      font-size: 10px;
+      color: #6e7681;
+      text-align: center;
+      margin-top: 2px;
+      line-height: 1.3;
+    }
+    hr { border: none; border-top: 1px solid #2b2b2b; margin: 36px 0 0; }
+  </style>
+</head>
+<body>
+  <h1>Space Kitten Dark</h1>
+  <p class="subtitle">Color reference — click any swatch to copy hex</p>
+
+  <h2>Backgrounds</h2>
+  <div class="grid">
+    <div class="swatch"><div class="color-block" style="background:#010409" onclick="copy('#010409')"></div><div class="hex">#010409</div><div class="label">overview ruler border</div></div>
+    <div class="swatch"><div class="color-block" style="background:#181818" onclick="copy('#181818')"></div><div class="hex">#181818</div><div class="label">panel / sidebar / titlebar bg</div></div>
+    <div class="swatch"><div class="color-block" style="background:#1f1f1f" onclick="copy('#1f1f1f')"></div><div class="hex">#1f1f1f</div><div class="label">editor bg</div></div>
+    <div class="swatch"><div class="color-block" style="background:#202020" onclick="copy('#202020')"></div><div class="hex">#202020</div><div class="label">widget bg</div></div>
+    <div class="swatch"><div class="color-block" style="background:#222222" onclick="copy('#222222')"></div><div class="hex">#222222</div><div class="label">quick input bg</div></div>
+    <div class="swatch"><div class="color-block" style="background:#2b2b2b" onclick="copy('#2b2b2b')"></div><div class="hex">#2b2b2b</div><div class="label">borders / separators</div></div>
+    <div class="swatch"><div class="color-block" style="background:#313131" onclick="copy('#313131')"></div><div class="hex">#313131</div><div class="label">inputs / dropdowns</div></div>
+    <div class="swatch"><div class="color-block" style="background:#34414b" onclick="copy('#34414b')"></div><div class="hex">#34414b</div><div class="label">chat bg</div></div>
+    <div class="swatch"><div class="color-block" style="background:#383a49" onclick="copy('#383a49')"></div><div class="hex">#383a49</div><div class="label">toggled bg</div></div>
+    <div class="swatch"><div class="color-block" style="background:#383b3d" onclick="copy('#383b3d')"></div><div class="hex">#383b3d</div><div class="label">list drop bg</div></div>
+    <div class="swatch"><div class="color-block" style="background:#3a3d41" onclick="copy('#3a3d41')"></div><div class="hex">#3a3d41</div><div class="label">inactive selection</div></div>
+    <div class="swatch"><div class="color-block" style="background:#3c3c3c" onclick="copy('#3c3c3c')"></div><div class="hex">#3c3c3c</div><div class="label">input borders</div></div>
+    <div class="swatch"><div class="color-block" style="background:#404040" onclick="copy('#404040')"></div><div class="hex">#404040</div><div class="label">indent guide</div></div>
+    <div class="swatch"><div class="color-block" style="background:#454545" onclick="copy('#454545')"></div><div class="hex">#454545</div><div class="label">menu border</div></div>
+    <div class="swatch"><div class="color-block" style="background:#515a6b" onclick="copy('#515a6b')"></div><div class="hex">#515a6b</div><div class="label">bracket match</div></div>
+    <div class="swatch"><div class="color-block" style="background:#3e4452" onclick="copy('#3e4452')"></div><div class="hex">#3e4452</div><div class="label">terminal border</div></div>
+    <div class="swatch"><div class="color-block" style="background:#21262d" onclick="copy('#21262d')"></div><div class="hex">#21262d</div><div class="label">text separator</div></div>
+  </div>
+
+  <h2>Foregrounds / Neutrals</h2>
+  <div class="grid">
+    <div class="swatch"><div class="color-block" style="background:#ffffff" onclick="copy('#ffffff')"></div><div class="hex">#ffffff</div><div class="label">pure white</div></div>
+    <div class="swatch"><div class="color-block" style="background:#e6e6e6" onclick="copy('#e6e6e6')"></div><div class="hex">#e6e6e6</div><div class="label">terminal bright white</div></div>
+    <div class="swatch"><div class="color-block" style="background:#d7dae0" onclick="copy('#d7dae0')"></div><div class="hex">#d7dae0</div><div class="label">terminal white</div></div>
+    <div class="swatch"><div class="color-block" style="background:#d7d7d7" onclick="copy('#d7d7d7')"></div><div class="hex">#d7d7d7</div><div class="label">activity bar active</div></div>
+    <div class="swatch"><div class="color-block" style="background:#d0d0d0" onclick="copy('#d0d0d0')"></div><div class="hex">#d0d0d0</div><div class="label">preformat fg</div></div>
+    <div class="swatch"><div class="color-block" style="background:#cccccc" onclick="copy('#cccccc')"></div><div class="hex">#cccccc</div><div class="label">primary fg</div></div>
+    <div class="swatch"><div class="color-block" style="background:#abb2bf;color:#1f1f1f" onclick="copy('#abb2bf')"></div><div class="hex">#abb2bf</div><div class="label">terminal fg / default token</div></div>
+    <div class="swatch"><div class="color-block" style="background:#9d9d9d;color:#1f1f1f" onclick="copy('#9d9d9d')"></div><div class="hex">#9d9d9d</div><div class="label">inactive fg</div></div>
+    <div class="swatch"><div class="color-block" style="background:#868686;color:#1f1f1f" onclick="copy('#868686')"></div><div class="hex">#868686</div><div class="label">inactive icons</div></div>
+    <div class="swatch"><div class="color-block" style="background:#818181;color:#1f1f1f" onclick="copy('#818181')"></div><div class="hex">#818181</div><div class="label">placeholder</div></div>
+    <div class="swatch"><div class="color-block" style="background:#707070;color:#1f1f1f" onclick="copy('#707070')"></div><div class="hex">#707070</div><div class="label">active indent guide</div></div>
+    <div class="swatch"><div class="color-block" style="background:#6e7681;color:#1f1f1f" onclick="copy('#6e7681')"></div><div class="hex">#6e7681</div><div class="label">line numbers</div></div>
+    <div class="swatch"><div class="color-block" style="background:#616161;color:#1f1f1f" onclick="copy('#616161')"></div><div class="hex">#616161</div><div class="label">badges</div></div>
+    <div class="swatch"><div class="color-block" style="background:#5c6370;color:#fff" onclick="copy('#5C6370')"></div><div class="hex">#5C6370</div><div class="label">comments</div></div>
+    <div class="swatch"><div class="color-block" style="background:#4f5666;color:#fff" onclick="copy('#4f5666')"></div><div class="hex">#4f5666</div><div class="label">terminal bright black</div></div>
+    <div class="swatch"><div class="color-block" style="background:#3f4451;color:#fff" onclick="copy('#3f4451')"></div><div class="hex">#3f4451</div><div class="label">terminal black</div></div>
+    <div class="swatch"><div class="color-block" style="background:#aeafad;color:#1f1f1f" onclick="copy('#aeafad')"></div><div class="hex">#aeafad</div><div class="label">cursor</div></div>
+    <div class="swatch"><div class="color-block" style="background:#f8f8f8;color:#1f1f1f" onclick="copy('#f8f8f8')"></div><div class="hex">#f8f8f8</div><div class="label">badge fg</div></div>
+  </div>
+
+  <h2>Blues</h2>
+  <div class="grid">
+    <div class="swatch"><div class="color-block" style="background:#0055ff" onclick="copy('#0055ff')"></div><div class="hex">#0055ff</div><div class="label">find match</div></div>
+    <div class="swatch"><div class="color-block" style="background:#0078d4" onclick="copy('#0078d4')"></div><div class="hex">#0078d4</div><div class="label">primary accent</div></div>
+    <div class="swatch"><div class="color-block" style="background:#026ec1" onclick="copy('#026ec1')"></div><div class="hex">#026ec1</div><div class="label">hover blue</div></div>
+    <div class="swatch"><div class="color-block" style="background:#2488db" onclick="copy('#2488db')"></div><div class="hex">#2488db</div><div class="label">input option border</div></div>
+    <div class="swatch"><div class="color-block" style="background:#40a6ff" onclick="copy('#40a6ff')"></div><div class="hex">#40a6ff</div><div class="label">chat slash cmd</div></div>
+    <div class="swatch"><div class="color-block" style="background:#4aa5f0" onclick="copy('#4aa5f0')"></div><div class="hex">#4aa5f0</div><div class="label">terminal blue</div></div>
+    <div class="swatch"><div class="color-block" style="background:#4daafc" onclick="copy('#4daafc')"></div><div class="hex">#4daafc</div><div class="label">links</div></div>
+    <div class="swatch"><div class="color-block" style="background:#4dc4ff" onclick="copy('#4dc4ff')"></div><div class="hex">#4dc4ff</div><div class="label">terminal bright blue</div></div>
+    <div class="swatch"><div class="color-block" style="background:#61AFEF" onclick="copy('#61AFEF')"></div><div class="hex">#61AFEF</div><div class="label">functions</div></div>
+  </div>
+
+  <h2>Greens</h2>
+  <div class="grid">
+    <div class="swatch"><div class="color-block" style="background:#8cc265" onclick="copy('#8cc265')"></div><div class="hex">#8cc265</div><div class="label">gutter added · running process · terminal green</div></div>
+    <div class="swatch"><div class="color-block" style="background:#98C379" onclick="copy('#98C379')"></div><div class="hex">#98C379</div><div class="label">strings</div></div>
+    <div class="swatch"><div class="color-block" style="background:#a5e075" onclick="copy('#a5e075')"></div><div class="hex">#a5e075</div><div class="label">terminal bright green</div></div>
+    <div class="swatch"><div class="color-block" style="background:#a6d189" onclick="copy('#a6d189')"></div><div class="hex">#a6d189</div><div class="label">—</div></div>
+  </div>
+
+  <h2>Cyans</h2>
+  <div class="grid">
+    <div class="swatch"><div class="color-block" style="background:#42b3c2" onclick="copy('#42b3c2')"></div><div class="hex">#42b3c2</div><div class="label">terminal cyan</div></div>
+    <div class="swatch"><div class="color-block" style="background:#4cd1e0" onclick="copy('#4cd1e0')"></div><div class="hex">#4cd1e0</div><div class="label">terminal bright cyan</div></div>
+    <div class="swatch"><div class="color-block" style="background:#56B6C2" onclick="copy('#56B6C2')"></div><div class="hex">#56B6C2</div><div class="label">operators / support</div></div>
+  </div>
+
+  <h2>Purples</h2>
+  <div class="grid">
+    <div class="swatch"><div class="color-block" style="background:#c162de" onclick="copy('#c162de')"></div><div class="hex">#c162de</div><div class="label">terminal magenta</div></div>
+    <div class="swatch"><div class="color-block" style="background:#C678DD" onclick="copy('#C678DD')"></div><div class="hex">#C678DD</div><div class="label">keywords</div></div>
+    <div class="swatch"><div class="color-block" style="background:#ca9ee6" onclick="copy('#ca9ee6')"></div><div class="hex">#ca9ee6</div><div class="label">variables / tags</div></div>
+    <div class="swatch"><div class="color-block" style="background:#de73ff" onclick="copy('#de73ff')"></div><div class="hex">#de73ff</div><div class="label">terminal bright magenta</div></div>
+  </div>
+
+  <h2>Yellows / Oranges</h2>
+  <div class="grid">
+    <div class="swatch"><div class="color-block" style="background:#D19A66;color:#1f1f1f" onclick="copy('#D19A66')"></div><div class="hex">#D19A66</div><div class="label">constants / brackets1</div></div>
+    <div class="swatch"><div class="color-block" style="background:#d18f52;color:#1f1f1f" onclick="copy('#d18f52')"></div><div class="hex">#d18f52</div><div class="label">terminal yellow</div></div>
+    <div class="swatch"><div class="color-block" style="background:#E5C07B;color:#1f1f1f" onclick="copy('#E5C07B')"></div><div class="hex">#E5C07B</div><div class="label">types / classes</div></div>
+    <div class="swatch"><div class="color-block" style="background:#f0a45d;color:#1f1f1f" onclick="copy('#f0a45d')"></div><div class="hex">#f0a45d</div><div class="label">terminal bright yellow</div></div>
+  </div>
+
+  <h2>Reds</h2>
+  <div class="grid">
+    <div class="swatch"><div class="color-block" style="background:#e05561" onclick="copy('#e05561')"></div><div class="hex">#e05561</div><div class="label">terminal red</div></div>
+    <div class="swatch"><div class="color-block" style="background:#F44747" onclick="copy('#F44747')"></div><div class="hex">#F44747</div><div class="label">error tokens</div></div>
+    <div class="swatch"><div class="color-block" style="background:#f85149" onclick="copy('#f85149')"></div><div class="hex">#f85149</div><div class="label">deleted / errors</div></div>
+    <div class="swatch"><div class="color-block" style="background:#ff616e" onclick="copy('#ff616e')"></div><div class="hex">#ff616e</div><div class="label">terminal bright red</div></div>
+  </div>
+
+  <hr>
+  <p style="margin-top:16px;color:#5c6370;font-size:11px;">Space Kitten Dark · generated from color-theme.json</p>
+
+  <script>
+    function copy(hex) {
+      navigator.clipboard.writeText(hex).catch(() => {});
+    }
+  </script>
+</body>
+</html>

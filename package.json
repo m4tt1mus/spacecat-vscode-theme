@@ -41,9 +41,9 @@
   "contributes": {
     "themes": [
       {
-        "label": "Space Cat Dark",
+        "label": "Space Kitten Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/Space Cat Dark-color-theme.json"
+        "path": "./themes/Space Kitten Dark-color-theme.json"
       }
     ]
   },

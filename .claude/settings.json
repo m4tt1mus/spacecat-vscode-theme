@@ -1,0 +1,19 @@
+{
+  "attribution": {
+    "commit": ""
+  },
+  "permissions": {
+    "ask": [
+      "Bash(git commit:*)"
+    ],
+    "allow": [
+      "Bash(mas search:*)",
+      "Bash(python3 -m json.tool)",
+      "Bash(curl -s \"https://itunes.apple.com/*)",
+      "Bash(curl -s https://brew.sh/)",
+      "WebFetch(domain:brew.sh)",
+      "Bash(brew info:*)",
+      "Bash(git add:*)"
+    ]
+  }
+}

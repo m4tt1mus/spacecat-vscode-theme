@@ -1,4 +1,9 @@
 .vscode/**
 .vscode-test/**
 .gitignore
+.claude/
 vsc-extension-quickstart.md
+color-reference.html
+example.js
+scripts/
+node_modules/

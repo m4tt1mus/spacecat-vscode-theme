@@ -50,5 +50,8 @@
   "engines": {
     "vscode": "^1.83.0"
   },
-  "icon": "img/space-cat.jpeg"
+  "icon": "img/space-cat.jpeg",
+  "devDependencies": {
+    "@vscode/vsce": "^3.7.1"
+  }
 }
